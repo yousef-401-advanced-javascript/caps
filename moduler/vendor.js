@@ -17,5 +17,5 @@ setInterval(()=>{
 },5000);
 
 function deliveredHandler(payload){
-  console.log('VENDOR:thank you for delivering');
+  console.log('VENDOR:thank you for delivering', payload.orderId);
 }

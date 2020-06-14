@@ -2,10 +2,11 @@
 
 
 const events = require('./moduler/events');
-require('./moduler/vendor');
 
+require('./moduler/vendor');
 events.on('pickup', (payload)=>{allEvents('pickup', payload);});
 events.on('in-transit', (payload)=>{allEvents('in-transit', payload);});
+events.on('delivered', (payload)=>{allEvents('delivered', payload);});
 
 
 
@@ -17,7 +18,6 @@ function allEvents(event, payload){
     payload:payload,
   });
 }
-events.on('delivered', (payload)=>{allEvents('delivered', payload);});
 
 require('./moduler/driver');
 
