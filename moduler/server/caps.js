@@ -14,12 +14,7 @@ server.on('connection', (socket)=>{
   // console.log(socket);
   const id = `socket-${uuidV4}`;
   socketPool[id] = socket;
-  // console.log(2);
-  // socket.on('pickup', (payload)=>{allEvents('pickup', payload);});//its gonna prepared before implementing vendor setInterval function
-  // console.log(3);
-  // socket.on('in-transit', (payload)=>{allEvents('in-transit', payload);});
-  // console.log(4);
-  // socket.on('delivered', (payload)=>{allEvents('delivered', payload);});
+ 
   socket.on('data', (buffer)=>dispatchEvent(buffer));
 
   socket.on('error', (error)=> console.log(`error : ${error.message}`));
@@ -29,7 +24,6 @@ server.on('connection', (socket)=>{
 
 
 function dispatchEvent(buffer){
-  // console.log(JSON.parse(buffer.toString()));
   const message = JSON.parse(buffer.toString());
   allEvents(message.event, message.order);
   // console.log(message);
