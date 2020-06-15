@@ -7,7 +7,7 @@
 ### Links and Resources
 
 
-- [class13 PR](https://github.com/yousef-401-advanced-javascript/caps/pull/1)
+- [class17 PR](https://github.com/yousef-401-advanced-javascript/caps/pull/2)
 <!-- - [swaggerHub URL](https://app.swaggerhub.com/apis/yousef-97/AOS2-allmethods/0.1)
 - [Heroku Deployment](https://api-serverapp.herokuapp.com/api/v1/products) -->
 <!-- - [github Action](https://github.com/yousef-401-advanced-javascript/caps/actions) -->
@@ -25,6 +25,8 @@
 <!-- - `superagent` -->
 <!-- - `jsonwebtoken` -->
 - `events (first party lib)`
+- `net (first party lib)`
+
 
 
 
